@@ -14,7 +14,9 @@ namespace DragTree
     public partial class Form1 : Form
     {
         // TODO - create an int variable to track currentRow,
+        int currentRow = 1;
         // TODO - create a Stopwatch object called stopwatch 
+        Stopwatch stopWatch = new Stopwatch();
 
         // TODO - create a timer on the form called lightTimer (interval 400ms)
         // TODO - create the tick event for the lightTimer
@@ -24,6 +26,7 @@ namespace DragTree
         // it will light up the appropriate lights, (labels). 
 
         // TODO - increment the currentRow value by 1
+        // currentRow++;
 
         public Form1()
         {
