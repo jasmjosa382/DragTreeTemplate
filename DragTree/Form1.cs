@@ -21,6 +21,7 @@ namespace DragTree
         // TODO - create a timer on the form called lightTimer (interval 400ms)
         // TODO - create the tick event for the lightTimer
 
+
         // place the following comments in the lighTimer tick event
         // TODO - create a switch block that checks currentRow. In each case
         // it will light up the appropriate lights, (labels). 
@@ -59,5 +60,15 @@ namespace DragTree
 
         }
 
+        private void lightTimer_Tick(object sender, EventArgs e)
+        {
+            // TODO - create a switch block that checks currentRow. In each case
+            // it will light up the appropriate lights, (labels). 
+
+            // TODO - increment the currentRow value by 1
+            // currentRow++;
+
+
+        }
     }
 }
