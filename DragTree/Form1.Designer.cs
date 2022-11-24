@@ -44,6 +44,7 @@
             this.resetButton = new System.Windows.Forms.Button();
             this.reactionLabel = new System.Windows.Forms.Label();
             this.lightTimer = new System.Windows.Forms.Timer(this.components);
+            this.outputLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // row1col1
@@ -180,12 +181,23 @@
             this.lightTimer.Interval = 400;
             this.lightTimer.Tick += new System.EventHandler(this.lightTimer_Tick);
             // 
+            // outputLabel
+            // 
+            this.outputLabel.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputLabel.ForeColor = System.Drawing.Color.White;
+            this.outputLabel.Location = new System.Drawing.Point(58, 253);
+            this.outputLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.outputLabel.Name = "outputLabel";
+            this.outputLabel.Size = new System.Drawing.Size(173, 17);
+            this.outputLabel.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(284, 279);
+            this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.reactionLabel);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.timeLabel);
@@ -225,6 +237,7 @@
         private System.Windows.Forms.Button resetButton;
         private System.Windows.Forms.Label reactionLabel;
         private System.Windows.Forms.Timer lightTimer;
+        private System.Windows.Forms.Label outputLabel;
     }
 }
 
